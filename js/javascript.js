@@ -102,22 +102,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+const backToTopButton = document.getElementById('back-to-top-btn');
 
-document.addEventListener("DOMContentLoaded", function() {
-    const cercle = document.querySelector(".cercle");
-
-    cercle.addEventListener("click", function(e) {
-        e.preventDefault();
-
-        const targetId = cercle.querySelector("a").getAttribute("href");
-        const targetSection = document.querySelector(targetId);
-
-        if (targetSection) {
-            const offsetTop = targetSection.getBoundingClientRect().top + window.scrollY;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: "smooth"
-            });
-        }
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
 });

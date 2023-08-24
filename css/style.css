@@ -142,7 +142,7 @@ body {
 .first_vue {
     display: flex;
     justify-content: end;
-    gap: 200px;
+    gap: 100px;
     margin-top: 100px;
 
 }
@@ -168,13 +168,16 @@ body {
     font-family: var(--ff-primary);
     font-weight: var(--fw-medium);
     color: var(--primary-clr);
-    margin-bottom: 90px;
+    margin-bottom: 50px;
 }
 
 .first_vue_speech {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.first_vue_image{
+    margin-bottom: 50px;
 }
 
 .button {
@@ -203,7 +206,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color:rgba(19, 19, 19, 0.8);
+    background-color:rgba(19, 19, 19, 1);
     margin: 0 auto;
     z-index: 999999999;
    
@@ -234,7 +237,7 @@ body {
 }
 
 .aboutme-speech {
-    max-width: 914px;
+    width: 60%;
     margin: 0 auto;
     font-family: var(--ff-primary);
     font-weight: var(--fw-regular);
@@ -284,9 +287,14 @@ body {
     margin-bottom: 100px;
     border: 1px solid #202020;
 }
-
-.spn {
-    transition: 0.5s all;
+.spn{
+     transition: 0.5s all;
+}
+.spn a{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .spn:hover img{
    opacity: 1;
@@ -333,7 +341,7 @@ body {
 }
 
 .services-card:hover {
-    transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1);
     background: linear-gradient(225deg,#D31E26 0%,#AF131A 100%);
     border-color: transparent;
    
@@ -365,15 +373,12 @@ body {
 
 /*--Works--*/
 .works-card-intern {
-    width: 400px;
-    height: 400px;
-    border-radius: 15px;
-    background: #202020;
+
     transition: all 0.7s;
 }
 
 .works-card-intern img {
-    width: 100%;
+
     border-radius: 15px;
 }
 
@@ -427,6 +432,7 @@ body {
     transition: 1s all;
     z-index: -1;
     overflow: scroll;
+    padding: 100px;
 }
 .popup::-webkit-scrollbar{
     display: none;
@@ -434,13 +440,12 @@ body {
 .popup-settings{
     display: flex;
     justify-content: center;
-    padding-top: 60px;
     position: relative;
-    
 }
 .popup-button{
     position: absolute;
     right: 5%;
+
 
 }
 .popup-button button{
@@ -472,7 +477,7 @@ body {
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    padding: 100px 0;
+   padding-top: 100px;
 
 }
 .images img{
@@ -481,13 +486,10 @@ body {
 .tricky{
     animation: moving 1.5s linear infinite;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
-.test{
-    position: absolute;
-    top:0;
-    right: 11%;
-    animation: moving2 1s linear infinite;
-}
+
 
 @keyframes moving{
     0%{
@@ -578,24 +580,16 @@ body {
     overflow: hidden;
     transition: all 0.7s;
     cursor: pointer;
-    width: 419px;
-    height: 258px;
-    border-radius: 10px;
-    background-color: #131313;
-
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .offer-card img {
     transition: all 0.7s;
-    width: 100%;
-    height: 100%;
+    border-radius: 10px;
 }
 
 .offers-cards {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 .pop-up {
@@ -639,13 +633,16 @@ body {
     display: flex;
     gap: 60px;
 }
-
+.contact-item{
+    display: flex;
+    justify-content: center;
+}
 .contact-speech {
     font-family: var(--ff-primary);
     font-size: var(--fz-50);
     font-weight: var(--fw-light);
     color: var(--primary-clr);
-    max-width: 902px;
+    width: 70%;
     text-align: center;
 
 }
