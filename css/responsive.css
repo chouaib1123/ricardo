@@ -1,0 +1,96 @@
+@media (max-width:1816px){
+    .first_vue_image img{
+        width: 500px;
+    }
+}
+@media (max-width:1751px){
+    .first_vue{
+       gap: 100px;
+    }
+    :root{
+        
+    --fz-600: 72px;
+    --fz-500: 60px;
+    --fz-400: 42px;
+    --fz-300: 34px;
+    --fz-200: 30px;
+    --fz-100: 22px;
+    --fz-50: 18px;
+    }
+    
+.Section {
+    margin: 0 170px;
+    
+}
+.sticky .navbar{
+    margin: 0 170px;
+   
+}
+.spn img{
+    width: calc(100% - 20px);
+}
+}
+
+@media(max-width:1557px){
+    :root{
+        
+        --fz-600: 68px;
+        --fz-500: 56px;
+        --fz-400: 38px;
+        --fz-300: 30px;
+        --fz-200: 27px;
+        --fz-100: 20px;
+        --fz-50: 17px;
+        }
+        .first_vue_image img {
+            width: 400px;
+        }
+        .Section {
+            margin: 0 100px;
+            
+        }
+        .sticky .navbar{
+            margin: 0 100px;
+           
+        }
+        .works-cards {
+         
+            gap: 40px;
+        }
+        .navbar-logo img,.contact-logo img{
+            width: 90px;
+        }
+        .contact-item img{
+            width: calc(100% - 10px);
+        }
+        .spn img{
+            width: calc(100% - 50px);
+        }
+         .services-cards {
+       
+        gap: 50px;
+    }
+}
+
+
+@media (max-width:1300px){
+   
+.works-card-intern {
+    width: 350px;
+    height: 350px;
+}
+.offer-card{
+    width: 319px;
+    height: 208px; 
+}
+:root{
+        
+    --fz-600: 68px;
+    --fz-500: 56px;
+    --fz-400: 38px;
+    --fz-300: 30px;
+    --fz-200: 27px;
+    --fz-100: 20px;
+    --fz-50: 17px;
+    }
+}
