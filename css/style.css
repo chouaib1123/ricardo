@@ -628,7 +628,9 @@ body {
     padding: 100px 0;
 
 }
-
+.under-navbar{
+    padding-top: 150px;
+}
 .contact-items {
     display: flex;
     gap: 60px;
@@ -646,6 +648,7 @@ body {
     text-align: center;
 
 }
+
 
 
 

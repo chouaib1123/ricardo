@@ -59,18 +59,18 @@ window.addEventListener('scroll', function() {
 
     const navbar = document.querySelector('.navbar-container');
     const home=document.querySelector('.cercle');
-    const firstsection = document.getElementById('s1');
+    const firstsection = document.querySelector('.first_vue');
     const navbarHeight = navbar.offsetHeight;
     const scrollPosition = window.scrollY;
     
     if (scrollPosition >= navbarHeight) {
         navbar.classList.add('sticky');
-        firstsection.style.paddingTop ="80px";
+        firstsection.classList.add('under-navbar');
         home.classList.add('ssticky');
     } else {
         navbar.classList.remove('sticky');
         home.classList.remove('ssticky');
-        firstsection.style.paddingTop ="0px";
+        firstsection.classList.remove('under-navbar');
     }
 });
 

@@ -316,6 +316,9 @@
         .works-card-intern img {
             width: 200px;
         }
+        .nav-items{
+            gap: 20px;
+        }
 }
 
 @media (max-width:700px){
@@ -348,16 +351,16 @@
     gap: 50px;
 }
 .big{
-    width: calc(100% - 80px);
+    width: 80px;
 }
 .neutral{
-    width: calc(100% - 60px);
+    width: 75px;
 }
 .small{
-    width:  calc(100% - 30px);
+    width:  60px;
 }
 .medium{
-    width: calc(100% - 40px);
+    width: 65px;
 }
 :root{
         
@@ -384,8 +387,108 @@
     .first_vue_image img {
         width: 220px;
     }
+    .sponsor-container{
+        padding:10px 0;
+    }
+}
+@media(max-width:600px){
+   .nav-items{
+    display: none;
+   } 
+   .sticky{
+     position: relative;
+   }
+   .navbar{
+    justify-content: center;
+   }
+   .navbar-logo img, .contact-logo img {
+    width: 60px;
+}
+.under-navbar{
+    padding-top: 0;
+}
+.first_vue{
+    position: relative;
+   
+   
+   padding: 250px 0 100px;
+    margin: 0;
+    overflow: hidden;
+}
+.First.Section{
+    margin: 0;
+}
+.ssticky{
+    display: none;
+}
+.first_vue_speech{
+   z-index: 99999999;
+   text-align: center;
+}
+.first_vue_image{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    opacity: 0.2;
+    top: 0;
+   
+    display: flex;
+    justify-content: center;
+}
+.first_vue_image img {
+    width: 750px;
+}
+.second-present{
+    margin-bottom: 100px;
+}
+.sponsor-container{
+    margin-bottom: 0;
+}
+.works-card-intern img {
+    width: 250px;
+}
+.aboutme-achieves{
+    gap: 20px;
+}
+.aboutme-speech {
+    width: 90%;
+}
+.contact-speech {
+    width: 90%;
+}
+.sponsor-container .Section{
+    margin: 0 10px;
+}
+.carousel .carousel-item {
+    width: 250px;
+}
+.carousel{
+    height: 250px;
+}
 }
 
-@media (max-width:600){
+@media (max-width:500px){
 
+    .big{
+        width: 60px;
+    }
+    .neutral{
+        width: 55px;
+    }
+    .small{
+        width:  45px;
+    }
+    .medium{
+        width: 50px;
+    }
+    :root{
+        
+        --fz-600: 36px;
+        --fz-500: 32px;
+        --fz-400: 21px;
+            --fz-300: 19px;
+            --fz-200: 17px;
+            --fz-100: 13px;
+            --fz-50: 9px;
+        }
 }
