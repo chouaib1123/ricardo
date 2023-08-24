@@ -555,9 +555,11 @@ body {
 
 .testimonial-body {
     color: var(--primary-clr);
-    font-size: var(--fz-100);
-    font-weight: var(--fw-bold);
+    font-size: var(--fz-50);
+    font-weight: var(--fw-regular);
     font-family: var(--ff-primary);
+   
+    width: 90%;
 }
 
 /*--/FeedBack--*/

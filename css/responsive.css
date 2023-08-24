@@ -491,4 +491,7 @@
             --fz-100: 13px;
             --fz-50: 9px;
         }
+        .offer-card img {
+            width: 300px;
+        }
 }
