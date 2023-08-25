@@ -11,11 +11,9 @@
 }
 
 @media (max-width:1751px) {
-    .works-card-intern img {
-        width: 350px;
-    }
+    
 
-    .offer-card img {
+    .offer-card img ,.works-card-intern img{
         width: 350px;
     }
 
@@ -62,9 +60,7 @@
 }
 
 @media(max-width:1557px) {
-    .works-card-intern img {
-        width: 300px;
-    }
+  
 
     .first_vue {
         justify-content: center;
@@ -132,7 +128,7 @@
 
 
 @media (max-width:1300px) {
-    .offer-card img {
+    .offer-card img ,.works-card-intern img{
         width: 250px;
     }
 
@@ -141,9 +137,7 @@
         gap: 50px;
     }
 
-    .works-card-intern img {
-        width: 270px;
-    }
+    
 
     .button {
         padding: 16px 40px;
@@ -287,9 +281,7 @@
         --fz-50: 13px;
     }
 
-    .works-card-intern img {
-        width: 220px;
-    }
+    
 }
 
 
@@ -327,7 +319,7 @@
         padding-bottom: 50px;
     }
 
-    .offer-card img {
+    .offer-card img ,.works-card-intern img{
         width: 200px;
     }
 
@@ -407,9 +399,7 @@
         gap: 20px;
     }
 
-    .works-card-intern img {
-        width: 200px;
-    }
+
 
     .nav-items {
         gap: 20px;
@@ -437,17 +427,14 @@
 
    
 
-    .works-card-intern img {
-        width: 70%;
-        
-    }
+   
 
     .offers-cards {
         flex-direction: column;
         gap: 50px;
     }
 
-    .offer-card img {
+    .offer-card img ,.works-card-intern img{
         width: 350px;
     }
 
@@ -669,7 +656,7 @@
         --fz-50: 11px;
     }
 
-    .offer-card img {
+    .offer-card img ,.works-card-intern img{
         width: 300px;
     }
 

@@ -210,8 +210,9 @@ body {
     background-color:rgba(19, 19, 19, 1);
     margin: 0 auto;
     z-index: 999999999;
-   
-  
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
     transition: all 0.3s;
     
 }
@@ -286,7 +287,8 @@ body {
     background-color: #131313;
     padding: 20px 0;
     margin-bottom: 100px;
-    border: 1px solid #202020;
+    border-left: 1px solid #202020;
+    border-right: 1px solid #202020;
 }
 .spn{
      transition: 0.5s all;
@@ -382,7 +384,9 @@ body {
 
     border-radius: 15px;
 }
-
+.works-card-intern img{
+    width: 500px;
+}
 .works-card-intern:hover {
     transform: scale(1.05);
     opacity: 0.3;
@@ -759,6 +763,7 @@ transition: 0.5s all;
 /*--Contact--*/
 .contact-container {
     background-color: #181818;
+    margin-top: 100px;
 }
 
 .contact {
