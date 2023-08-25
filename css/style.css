@@ -451,11 +451,13 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    align-items: center;
 }
+
 .popup-button{
     position: absolute;
+    top: 0;
     right: 5%;
- top: 10%;
 
 }
 .popup-button button{
@@ -508,6 +510,7 @@ body {
     align-items: start;
     justify-content: center;
 }
+
 .images2 img{
   width: 300px;
   border-radius: 10px;
@@ -531,6 +534,8 @@ body {
 .images3 .video,.images3 img{
  width: 300px;
  border-radius: 10px;
+ cursor: pointer;
+transition: 0.5s all;
 }
 .images{
    
@@ -568,7 +573,7 @@ body {
     
 }
 
-.images .img:hover img,.images2 .img2:hover img{
+.images .img:hover img,.images2 .img2:hover img,.vid:hover .video,.vid:hover img{
     transform: scale(1.05);
     filter: blur(2px);
 }

@@ -126,10 +126,10 @@ backToTopButton.addEventListener('click', () => {
 
 
 
-const catalogueImages = document.querySelectorAll('.catalogueimage');
+const catalogue = document.querySelectorAll('.catalogue');
 
-catalogueImages.forEach(image => {
-    image.addEventListener('click', () => {
-        window.open(image.src, '_blank');
+catalogue.forEach(element => {
+    element.addEventListener('click', () => {
+        window.open(element.src, '_blank');
     });
 });
