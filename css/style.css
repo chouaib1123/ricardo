@@ -419,11 +419,17 @@ body {
     position: relative;
     overflow: hidden;
 }
+.arrow{
+    position: absolute;
+   
+    top: 2%;
+    left: 45%;
+}
 .popup {
    
     position: fixed;
-    width:80%;
-    height: 70%;
+    width:85%;
+    height: 80%;
     border-radius:10px ;
     background: #232323;
     top: 15%;
@@ -449,7 +455,7 @@ body {
 .popup-button{
     position: absolute;
     right: 5%;
-
+ top: 10%;
 
 }
 .popup-button button{
@@ -464,11 +470,19 @@ body {
     color: var(--primary-clr);
     text-align: center;
 }
-.works-container.active .popup{
+.works-container.active .popup,.works-container.active2 .popup,.works-container.active3 .popup{
 
     transform: translateY(0%);
     z-index: 99999999999999;
     opacity: 1;
+
+}
+
+.title1,.title2,.title3{
+    display: none;
+}
+.active .title1,.active2 .title2,.active3 .title3{
+    display: flex;
 }
 
 .works-card button{
@@ -476,14 +490,53 @@ body {
     border: none;
     background-color: transparent;
 }
+.images2{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 80%;
+  height: 60%;
+  gap: 20px;
+  align-items: start;
+     justify-content: center;
+}
+.images3{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 80%;
+    height: 60%;
+    gap: 20px;
+    align-items: start;
+    justify-content: center;
+}
+.images2 img{
+  width: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+   
+    transition: 0.5s all;
+}
+.img2-division{
+    width: 100%;
+    font-size: var(--fz-300);
+    color: var(--neutral-clr);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-primary);
+    text-align: center;
+    margin-top: 50px;
+}
+.img2{
+    display: flex;
+    justify-content: center;
+}
+.images3 .video,.images3 img{
+ width: 300px;
+ border-radius: 10px;
+}
 .images{
    
     display: flex;
     gap: 20px;
-     flex-wrap: wrap;
-  
-
-     
+     flex-wrap: wrap; 
      width: 80%;
      align-items: start;
      justify-content: center;
@@ -515,7 +568,7 @@ body {
     
 }
 
-.images .img:hover img{
+.images .img:hover img,.images2 .img2:hover img{
     transform: scale(1.05);
     filter: blur(2px);
 }
@@ -527,11 +580,17 @@ body {
 }
 
 .images-container{
-    margin: 70px ;
+    margin: 50px 0px ;
     display: flex;
     justify-content: center;
     align-items: start;
     overflow-y: scroll;
+}
+.images,.images2,.images3{
+    display: none;
+}
+.active .images,.active2 .images2,.active3 .images3 {
+    display: flex;
 }
 .images-container::-webkit-scrollbar{
     display: none;
@@ -541,6 +600,13 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+}
+.tricky button:hover{
+    background: var(--secondary-clr);
+
+    color: var(--primary-clr);
+    
+    border: 2px solid transparent;
 }
 
 
@@ -575,10 +641,10 @@ body {
     width: 500px;
     background: linear-gradient(44deg, #131313 0%, #161616 39.00%, #232323 100%);
     border-radius: 10px;
-    height: auto;
+    height: 260px;
     padding: 20px;
     cursor: pointer;
-    transition: background 0.7s all;
+    transition: background 0.7s ease;
 
 }
 .carousel .carousel-item:hover{
@@ -589,6 +655,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 .name- {
@@ -633,38 +700,52 @@ body {
 
 .offer-card {
     position: relative;
-    overflow: hidden;
-    transition: all 0.7s;
+   
+    transition: all 0.5s;
     cursor: pointer;
 }
 
 .offer-card img {
-    transition: all 0.7s;
+    transition: all 0.5s;
     border-radius: 10px;
+    width: 500px;
 }
 
 .offers-cards {
     display: flex;
-    gap: 30px;
+    gap: 50px; 
+    overflow: hidden;
 }
 
-.pop-up {
+.offer-card-speech {
+    margin: 10px;
     position: absolute;
-    top: 20%;
-
+    top: 5%;
     text-align: center;
-    transform: translateY(200%);
+    font-family: var(--ff-primary);
+    color: var(--primary-clr);
+    font-size: var(--fz-50);
+    font-weight: var(--fw-light);
     opacity: 0;
-    transition: all 0.7s;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(50%);
 }
-
-.offer-card:hover .pop-up {
-    transform: translateY(0%);
+.offer-card:hover .offer-card-speech{
     opacity: 1;
+    transform: translateY(0%);
 }
-
+.offer-pricing{
+    color: var(--secondary-clr);
+    margin-top: 20px;
+}
+.offer-card:hover{
+    scale: 1.05;
+}
 .offer-card:hover img {
-    opacity: 0.2;
+    opacity: 0.1;
+   
 }
 
 
@@ -691,11 +772,13 @@ body {
     display: flex;
     gap: 60px;
 }
-
 .contact-item{
+     transition: all 0.5s;
+}
+.contact-item a{
     display: flex;
     justify-content: center;
-    transition: all 0.5s;
+   
     cursor: pointer;
 }
 .contact-item:hover svg path{

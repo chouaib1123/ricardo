@@ -3,6 +3,11 @@
         width: 500px;
     }
 }
+@media(min-width:1751px){
+    .offer-card-speech{
+        font-size: 30px;
+    }
+}
 @media (max-width:1751px){
     .works-card-intern img{
         width: 350px;
@@ -196,15 +201,20 @@
         .navbar-logo img, .contact-logo img {
             width: 70px;
         }
+        .images-container{
+            margin: 50px;
+        }
 }
 
 
 @media (max-width:1034px){
-    .testimonial svg{
-        width: 60px;
+   
+    .carousel .carousel-item{
+        height: 200px;
+        width: 380px;
     }
-    .carousel .carousel-item {
-        width: 350px;
+    .testimonial-picture img {
+        width: 60px;
     }
     .feedback{
         gap: 70px;
@@ -232,6 +242,13 @@
 
 
 @media (max-width:950px){
+    .carousel .carousel-item{
+        height: 160px;
+        width: 340px;
+    }
+    .testimonial-picture img {
+        width: 50px;
+    }
     .currentclick::after {
         width: 7px;
         height: 7px;
@@ -326,6 +343,9 @@
 }
 
 @media (max-width:700px){
+    .offer-card-speech{
+        font-size: 20px;
+    }
   .services-cards{
     flex-direction: column;
     align-items: center;
@@ -351,8 +371,12 @@
 .offer-card img {
     width: 350px;
 }
-.carousel .carousel-item {
-    width: 300px;
+.carousel .carousel-item{
+    height: 180px;
+    width: 340px;
+}
+.testimonial-picture img {
+    width: 50px;
 }
 
 .services-cards {
@@ -465,16 +489,34 @@
 .sponsor-container .Section{
     margin: 0 10px;
 }
-.carousel .carousel-item {
-    width: 250px;
+
+.images-container{
+    margin: 30px;
 }
-.carousel{
-    height: 250px;
+.images .img img{
+    width: 250px;
 }
 }
 
 @media (max-width:500px){
-
+    .images2  img{
+        width: 100%;
+       
+    }
+    .images3{
+        gap: 50px;
+    }
+    .images3  img,.images3 .video{
+        width: 100%;
+       
+    }
+    .carousel .carousel-item{
+        height: auto;
+        width: 90%;
+    }
+    .testimonial-picture img {
+        width: 50px;
+    }
     .big{
         width: 60px;
     }
@@ -493,11 +535,14 @@
         --fz-500: 32px;
         --fz-400: 21px;
             --fz-300: 19px;
-            --fz-200: 17px;
+            --fz-200: 15px;
             --fz-100: 13px;
-            --fz-50: 9px;
+            --fz-50: 11px;
         }
         .offer-card img {
             width: 300px;
+        }
+        .offer-card-speech{
+            font-size: 19px;
         }
 }

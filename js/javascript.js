@@ -35,12 +35,7 @@ $(document).ready(function(){
 function show(){
     const container = document.querySelector(".works-container");
     var main = document.getElementById("main");
-    if(container.classList.contains("active")){
-    
-        container.classList.remove("active");
-        document.body.style.overflow = 'auto';
-    }
-    else{ 
+    if(!container.classList.contains("active")){
         container.classList.add("active");
         document.body.style.overflow = 'hidden';
     }
@@ -49,9 +44,27 @@ function cancel(){
     const container = document.querySelector(".works-container");
     document.body.style.overflow = 'auto';
         container.classList.remove("active");
-    
-  
+        container.classList.remove("active2");
+        container.classList.remove("active3");
 }
+
+
+function show2(){
+    const container = document.querySelector(".works-container");
+    var main = document.getElementById("main");
+    if(!container.classList.contains("active2")){
+        container.classList.add("active2");
+        document.body.style.overflow = 'hidden';
+    }
+}    
+function show3(){
+    const container = document.querySelector(".works-container");
+    var main = document.getElementById("main");
+    if(!container.classList.contains("active3")){
+        container.classList.add("active3");
+        document.body.style.overflow = 'hidden';
+    }
+}  
 
 
 
