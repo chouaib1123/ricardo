@@ -42,6 +42,7 @@ body {
 .main-container {
     background: var(--primary-background-clr);
     height: 100%;
+    overflow: hidden;
 }
 
 
@@ -421,22 +422,25 @@ body {
 .popup {
    
     position: fixed;
-    width:70%;
+    width:80%;
     height: 70%;
     border-radius:10px ;
     background: #232323;
     top: 15%;
-    left: 15%;
+    left: 10%;
     opacity: 0;
     transform: translateY(-50%);
     transition: 1s all;
     z-index: -1;
-    overflow: scroll;
-    padding: 100px;
+    padding-top:50px;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+   
+   
 }
-.popup::-webkit-scrollbar{
-    display: none;
-}
+
 .popup-settings{
     display: flex;
     justify-content: center;
@@ -473,15 +477,64 @@ body {
     background-color: transparent;
 }
 .images{
+   
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
-   padding-top: 100px;
+    gap: 20px;
+     flex-wrap: wrap;
+  
 
+     
+     width: 80%;
+     align-items: start;
+     justify-content: center;
+    height: 60%;
+    
+   
 }
-.images img{
+.images .img img{
+    width: 300px;
+    cursor: pointer;
     border-radius: 10px;
+    transition: 0.5s all;
+}
+.images .img{
+    transition: 0.5s all;
+    position: relative;
+    
+}
+.zoom{
+    position: absolute;
+    z-index: 99999999;
+    top: 45%;
+    left: 45%;
+    display: none;
+    cursor: pointer;
+}
+.images .img:hover .zoom{
+     display: block;
+    
+}
+
+.images .img:hover img{
+    transform: scale(1.05);
+    filter: blur(2px);
+}
+.images .img img:checked{
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+.images-container{
+    margin: 70px ;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow-y: scroll;
+}
+.images-container::-webkit-scrollbar{
+    display: none;
 }
 .tricky{
     animation: moving 1.5s linear infinite;
@@ -552,14 +605,15 @@ body {
     font-weight: var(--fw-regular);
     font-family: var(--ff-primary);
 }
-
+.testimonial-picture img{
+    width: 100px;
+}
 .testimonial-body {
     color: var(--primary-clr);
     font-size: var(--fz-50);
     font-weight: var(--fw-regular);
     font-family: var(--ff-primary);
-   
-    width: 90%;
+     
 }
 
 /*--/FeedBack--*/
@@ -637,9 +691,18 @@ body {
     display: flex;
     gap: 60px;
 }
+
 .contact-item{
     display: flex;
     justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.contact-item:hover svg path{
+  fill: var(--secondary-clr);
+}
+.contact-item:hover{
+   transform: scale(1.2);
 }
 .contact-speech {
     font-family: var(--ff-primary);

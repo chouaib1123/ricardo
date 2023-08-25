@@ -78,7 +78,7 @@
         .navbar-logo img,.contact-logo img{
             width: 90px;
         }
-        .contact-item img{
+        .contact-item svg{
             width: calc(100% - 10px);
         }
         .big{
@@ -147,6 +147,10 @@
 }
 
 @media (max-width:1200px){
+    .contact-items {
+       
+        gap: 30px;
+    }
     .testimonial svg{
         width: 80px;
     }
@@ -186,7 +190,7 @@
         --fz-100: 18px;
         --fz-50: 15px;
         }
-        .contact-item img {
+        .contact-item svg{
             width: calc(100% - 20px);
         }
         .navbar-logo img, .contact-logo img {
@@ -237,7 +241,7 @@
         display: flex;
         gap: 10px;
     }
-    .contact-item img {
+    .contact-item svg {
         width: calc(100% - 30px);
     }
     .contact{
@@ -333,8 +337,12 @@
     flex-direction: column;
     gap: 50px;
 }
+.works-card-intern  {
+    width: 70%;
+    margin: 0 auto;
+}
 .works-card-intern img {
-    width: 350px;
+    width: 100%;
 }
 .offers-cards{
     flex-direction: column;
@@ -444,9 +452,7 @@
 .sponsor-container{
     margin-bottom: 0;
 }
-.works-card-intern img {
-    width: 250px;
-}
+
 .aboutme-achieves{
     gap: 20px;
 }

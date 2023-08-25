@@ -110,3 +110,13 @@ backToTopButton.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
+
+
+const catalogueImages = document.querySelectorAll('.catalogueimage');
+
+catalogueImages.forEach(image => {
+    image.addEventListener('click', () => {
+        window.open(image.src, '_blank');
+    });
+});
