@@ -194,6 +194,9 @@ body {
     border: 2px solid transparent;
     position: relative;
 }
+.button:focus{
+    background: var(--secondary-clr);
+}
 
 .button:hover {
     background-color: transparent;
@@ -219,6 +222,12 @@ body {
 .sticky .navbar{
     margin: 0 200px;
     padding-top: 0;
+}
+.navbar-logo{
+    transition: 0.5s all;
+}
+.navbar-logo:hover{
+   transform: scale(1.05);
 }
 /*--/first_vue--*/
 
@@ -807,7 +816,12 @@ transition: 0.5s all;
 
 }
 
-
+.contact-logo{
+    transition: 0.5s all;
+}
+.contact-logo:hover{
+   transform: scale(1.05);
+}
 
 
 /*--/Contact--*/

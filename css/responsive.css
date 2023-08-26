@@ -93,7 +93,7 @@
 
     .navbar-logo img,
     .contact-logo img {
-        width: 90px;
+        width: 70px;
     }
 
     .contact-item svg {
@@ -238,7 +238,7 @@
 
     .navbar-logo img,
     .contact-logo img {
-        width: 70px;
+        width: 50px;
     }
 
     .images-container {
@@ -527,7 +527,7 @@
 
     .navbar-logo img,
     .contact-logo img {
-        width: 60px;
+        width: 50px;
     }
 
     .under-navbar {
@@ -655,9 +655,12 @@
         --fz-100: 13px;
         --fz-50: 11px;
     }
-
+    .offer-card,.works-card-intern{
+        display: flex;
+       justify-content: center;
+    }
     .offer-card img ,.works-card-intern img{
-        width: 300px;
+        width: 80%;
     }
 
     .offer-card-speech {
