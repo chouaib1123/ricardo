@@ -42,7 +42,21 @@
 
     }
 
-  
+    .big {
+        width: calc(100% - 40px);
+    }
+
+    .neutral {
+        width: calc(100% - 20px);
+    }
+
+    .small {
+        width: calc(100% - 5px);
+    }
+
+    .medium {
+        width: calc(100% - 10px);
+    }
 }
 
 @media(max-width:1557px) {
@@ -86,6 +100,21 @@
         width: calc(100% - 10px);
     }
 
+    .big {
+        width: calc(100% - 60px);
+    }
+
+    .neutral {
+        width: calc(100% - 30px);
+    }
+
+    .small {
+        width: calc(100% - 10px);
+    }
+
+    .medium {
+        width: calc(100% - 20px);
+    }
 
     .services-card-logo img {
         width: 30px;
@@ -119,7 +148,21 @@
         gap: 50px;
     }
 
+    .big {
+        width: calc(100% - 80px);
+    }
 
+    .neutral {
+        width: calc(100% - 60px);
+    }
+
+    .small {
+        width: calc(100% - 30px);
+    }
+
+    .medium {
+        width: calc(100% - 40px);
+    }
 
     :root {
 
@@ -134,24 +177,6 @@
 }
 
 @media (max-width:1200px) {
-    .big {
-      width: 210px;
-    }
-
-    .neutral {
-      width: 170px;
-    }
-
-    .small {
-      width: 120px;
-    }
-
-    .medium {
-       width: 150px;
-    }
-    .spn1,.spn2{
-        gap: 150px;
-    }
     .cancel-active svg {
         width: 15px;
     }
@@ -338,23 +363,21 @@
 
 @media (max-width:836px) {
     .big {
-        width: 180px;
-      }
-  
-      .neutral {
-        width: 140px;
-      }
-  
-      .small {
-        width: 100px;
-      }
-  
-      .medium {
-         width: 120px;
-      }
-      .spn1,.spn2{
-          gap: 100px;
-      }
+        width: 115px;
+    }
+
+    .neutral {
+        width: 101px;
+    }
+
+    .small {
+        width: 90px;
+    }
+
+    .medium {
+        width: 102px;
+    }
+   
     :root {
 
         --fz-600: 42px;
@@ -400,6 +423,20 @@
 }
 
 @media (max-width:700px) {
+
+    .spn2{
+        display: none;
+    }
+    .sponsor{
+        justify-content: center;
+        gap: 30px;
+    }
+    .sponsor-container2{
+        display: block;
+    }
+    .sponsor-container1{
+       margin-bottom: 20px;
+    }
     .offer-card-speech {
         font-size: 20px;
     }
@@ -444,6 +481,8 @@
     .services-cards {
         gap: 50px;
     }
+
+   
 
     :root {
 
@@ -553,9 +592,7 @@
         margin-bottom: 100px;
     }
 
-    .sponsor-container {
-        margin-bottom: 0;
-    }
+   
 
     .aboutme-achieves {
         gap: 20px;
@@ -607,7 +644,7 @@
         width: 50px;
     }
 
- 
+
 
     :root {
 
@@ -635,5 +672,26 @@
         top: -30px;
         right: 5%;
     
+    }
+}
+@media (max-width:390px){
+    .sponsor{
+        justify-content: space-between;
+        gap: 0;
+    }
+    .big {
+        width: 100px;
+    }
+
+    .neutral {
+        width: 90px;
+    }
+
+    .small {
+        width: 75px;
+    }
+
+    .medium {
+        width: 87px;
     }
 }

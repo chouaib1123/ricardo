@@ -285,14 +285,22 @@ body {
   opacity: 0.2;
   transition: 0.5s all;
 }
-
+.sponsor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
 
 .sponsor-container {
     background-color: #131313;
     padding: 20px 0;
     margin-bottom: 100px;
-    border-left: 1px solid #202020;
-    border-right: 1px solid #202020;
+    border-top: 1px solid #202020;
+    border-bottom: 1px solid #202020;
+}
+.sponsor-container2{
+ display: none;
 }
 .spn{
      transition: 0.5s all;
@@ -309,40 +317,7 @@ body {
 .spn:hover {
     transform: translateY(5%);
 }
-.sponsor{
-    position: relative;
-    overflow: hidden;
-    background: var(--card-cl);
-    padding: 10px;
-    display: flex;
-    max-width: 1980px;
-    margin: 0 auto  ;
 
-    
-}
-.spn1{
-    display: flex;
-    gap: 220px;
-    align-items: center;
-    animation: cross 12s linear infinite;
-   animation-delay:-6s; 
-}
-.spn2{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    gap: 220px;
-    animation: cross 12s  linear infinite;  
-}
-@keyframes cross{
-    0%{
-        transform: translateX(120%);
-    }
-    100%{
-        transform: translateX(-120%);
-    }
-
-}
 /*--/Sponsor--*/
 
 
