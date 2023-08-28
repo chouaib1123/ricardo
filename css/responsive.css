@@ -42,21 +42,7 @@
 
     }
 
-    .big {
-        width: calc(100% - 40px);
-    }
-
-    .neutral {
-        width: calc(100% - 20px);
-    }
-
-    .small {
-        width: calc(100% - 5px);
-    }
-
-    .medium {
-        width: calc(100% - 10px);
-    }
+  
 }
 
 @media(max-width:1557px) {
@@ -100,21 +86,6 @@
         width: calc(100% - 10px);
     }
 
-    .big {
-        width: calc(100% - 60px);
-    }
-
-    .neutral {
-        width: calc(100% - 30px);
-    }
-
-    .small {
-        width: calc(100% - 10px);
-    }
-
-    .medium {
-        width: calc(100% - 20px);
-    }
 
     .services-card-logo img {
         width: 30px;
@@ -148,21 +119,7 @@
         gap: 50px;
     }
 
-    .big {
-        width: calc(100% - 80px);
-    }
 
-    .neutral {
-        width: calc(100% - 60px);
-    }
-
-    .small {
-        width: calc(100% - 30px);
-    }
-
-    .medium {
-        width: calc(100% - 40px);
-    }
 
     :root {
 
@@ -177,6 +134,24 @@
 }
 
 @media (max-width:1200px) {
+    .big {
+      width: 210px;
+    }
+
+    .neutral {
+      width: 170px;
+    }
+
+    .small {
+      width: 120px;
+    }
+
+    .medium {
+       width: 150px;
+    }
+    .spn1,.spn2{
+        gap: 150px;
+    }
     .cancel-active svg {
         width: 15px;
     }
@@ -362,6 +337,24 @@
 }
 
 @media (max-width:836px) {
+    .big {
+        width: 180px;
+      }
+  
+      .neutral {
+        width: 140px;
+      }
+  
+      .small {
+        width: 100px;
+      }
+  
+      .medium {
+         width: 120px;
+      }
+      .spn1,.spn2{
+          gap: 100px;
+      }
     :root {
 
         --fz-600: 42px;
@@ -418,6 +411,7 @@
 
     .services-card {
         padding: 27px 20px;
+        width: 80%;
     }
 
     .works-cards {
@@ -449,22 +443,6 @@
 
     .services-cards {
         gap: 50px;
-    }
-
-    .big {
-        width: 80px;
-    }
-
-    .neutral {
-        width: 75px;
-    }
-
-    .small {
-        width: 60px;
-    }
-
-    .medium {
-        width: 65px;
     }
 
     :root {
@@ -629,21 +607,7 @@
         width: 50px;
     }
 
-    .big {
-        width: 60px;
-    }
-
-    .neutral {
-        width: 55px;
-    }
-
-    .small {
-        width: 45px;
-    }
-
-    .medium {
-        width: 50px;
-    }
+ 
 
     :root {
 

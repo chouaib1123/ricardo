@@ -118,6 +118,14 @@ document.addEventListener("DOMContentLoaded", function() {
 const backToTopButton = document.getElementById('back-to-top-btn');
 
 backToTopButton.addEventListener('click', () => {
+    const navItems = document.querySelectorAll(".nav-item");
+    navItems.forEach(item => {
+      
+                item.classList.remove("currentclick");
+            
+        
+        });
+
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
@@ -133,3 +141,9 @@ catalogue.forEach(element => {
         window.open(element.src, '_blank');
     });
 });
+
+
+
+
+
+

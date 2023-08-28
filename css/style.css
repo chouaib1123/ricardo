@@ -285,12 +285,7 @@ body {
   opacity: 0.2;
   transition: 0.5s all;
 }
-.sponsor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
 
 .sponsor-container {
     background-color: #131313;
@@ -314,7 +309,40 @@ body {
 .spn:hover {
     transform: translateY(5%);
 }
+.sponsor{
+    position: relative;
+    overflow: hidden;
+    background: var(--card-cl);
+    padding: 10px;
+    display: flex;
+    max-width: 1980px;
+    margin: 0 auto  ;
 
+    
+}
+.spn1{
+    display: flex;
+    gap: 220px;
+    align-items: center;
+    animation: cross 12s linear infinite;
+   animation-delay:-6s; 
+}
+.spn2{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 220px;
+    animation: cross 12s  linear infinite;  
+}
+@keyframes cross{
+    0%{
+        transform: translateX(120%);
+    }
+    100%{
+        transform: translateX(-120%);
+    }
+
+}
 /*--/Sponsor--*/
 
 
