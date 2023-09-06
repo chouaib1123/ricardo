@@ -11,9 +11,10 @@
 }
 
 @media (max-width:1751px) {
-    
 
-    .offer-card img ,.works-card-intern img{
+
+    .offer-card img,
+    .works-card-intern img {
         width: 350px;
     }
 
@@ -42,25 +43,11 @@
 
     }
 
-    .big {
-        width: calc(100% - 40px);
-    }
-
-    .neutral {
-        width: calc(100% - 20px);
-    }
-
-    .small {
-        width: calc(100% - 5px);
-    }
-
-    .medium {
-        width: calc(100% - 10px);
-    }
+   
 }
 
 @media(max-width:1557px) {
-  
+
 
     .first_vue {
         justify-content: center;
@@ -100,21 +87,7 @@
         width: calc(100% - 10px);
     }
 
-    .big {
-        width: calc(100% - 60px);
-    }
-
-    .neutral {
-        width: calc(100% - 30px);
-    }
-
-    .small {
-        width: calc(100% - 10px);
-    }
-
-    .medium {
-        width: calc(100% - 20px);
-    }
+   
 
     .services-card-logo img {
         width: 30px;
@@ -128,7 +101,9 @@
 
 
 @media (max-width:1300px) {
-    .offer-card img ,.works-card-intern img{
+
+    .offer-card img,
+    .works-card-intern img {
         width: 250px;
     }
 
@@ -137,7 +112,7 @@
         gap: 50px;
     }
 
-    
+
 
     .button {
         padding: 16px 40px;
@@ -148,21 +123,7 @@
         gap: 50px;
     }
 
-    .big {
-        width: calc(100% - 80px);
-    }
-
-    .neutral {
-        width: calc(100% - 60px);
-    }
-
-    .small {
-        width: calc(100% - 30px);
-    }
-
-    .medium {
-        width: calc(100% - 40px);
-    }
+  
 
     :root {
 
@@ -177,9 +138,28 @@
 }
 
 @media (max-width:1200px) {
+    .big {
+        width: 135px;
+    }
+
+    .neutral {
+        width: 117px;
+    }
+
+    .small {
+        width: 105px;
+    }
+
+    .medium {
+        width: 112px;
+    }
     .cancel-active svg {
         width: 15px;
     }
+    .spn1,.spn2{
+        gap: 150px;
+    }
+
     .contact-items {
 
         gap: 30px;
@@ -248,7 +228,10 @@
 
 
 @media (max-width:1034px) {
-
+    .arrow img{
+        width: 25px;
+        
+    }
     .carousel .carousel-item {
         height: 200px;
         width: 380px;
@@ -281,7 +264,7 @@
         --fz-50: 13px;
     }
 
-    
+
 }
 
 
@@ -319,7 +302,8 @@
         padding-bottom: 50px;
     }
 
-    .offer-card img ,.works-card-intern img{
+    .offer-card img,
+    .works-card-intern img {
         width: 200px;
     }
 
@@ -362,6 +346,13 @@
 }
 
 @media (max-width:836px) {
+    .arrow {
+       right: -5%;
+        
+    }
+    .arrow img {
+        width: 20px;
+    }
     .big {
         width: 115px;
     }
@@ -377,7 +368,7 @@
     .medium {
         width: 102px;
     }
-   
+
     :root {
 
         --fz-600: 42px;
@@ -424,19 +415,13 @@
 
 @media (max-width:700px) {
 
-    .spn2{
-        display: none;
-    }
-    .sponsor{
-        justify-content: center;
-        gap: 30px;
-    }
-    .sponsor-container2{
-        display: block;
-    }
-    .sponsor-container1{
-       margin-bottom: 20px;
-    }
+   
+
+    
+
+   
+
+
     .offer-card-speech {
         font-size: 20px;
     }
@@ -456,16 +441,17 @@
         gap: 50px;
     }
 
-   
 
-   
+
+
 
     .offers-cards {
         flex-direction: column;
         gap: 50px;
     }
 
-    .offer-card img ,.works-card-intern img{
+    .offer-card img,
+    .works-card-intern img {
         width: 350px;
     }
 
@@ -482,7 +468,7 @@
         gap: 50px;
     }
 
-   
+
 
     :root {
 
@@ -526,10 +512,11 @@
         padding-top: 70px;
         padding-bottom: 30px;
     }
+
     .feedback {
         gap: 0;
     }
-    
+
     .nav-items {
         display: none;
     }
@@ -592,7 +579,7 @@
         margin-bottom: 100px;
     }
 
-   
+
 
     .aboutme-achieves {
         gap: 20px;
@@ -656,42 +643,29 @@
         --fz-100: 13px;
         --fz-50: 11px;
     }
-    .offer-card,.works-card-intern{
+
+    .offer-card a,
+    .works-card-intern {
         display: flex;
-       justify-content: center;
+        justify-content: center;
+       
     }
-    .offer-card img ,.works-card-intern img{
+    
+    .offer-card img,
+    .works-card-intern  img {
         width: 80%;
+       
     }
 
     .offer-card-speech {
         font-size: 19px;
     }
-    .popup-button{
+
+    .popup-button {
         position: absolute;
         top: -30px;
         right: 5%;
-    
+
     }
 }
-@media (max-width:390px){
-    .sponsor{
-        justify-content: space-between;
-        gap: 0;
-    }
-    .big {
-        width: 100px;
-    }
 
-    .neutral {
-        width: 90px;
-    }
-
-    .small {
-        width: 75px;
-    }
-
-    .medium {
-        width: 87px;
-    }
-}
